@@ -1,5 +1,17 @@
 # Custom Constraints for Succinct Arguments
 
-Rust implementations for R1CS, Plonkish, and [CCS](https://eprint.iacr.org/2023/552), due to Setty et al. 2023. 
+## About
+Rust implementations for R1CS, Plonkish, and [CCS](https://eprint.iacr.org/2023/552), due to Setty et al. 2023. This repository is built using [arkworks](https://github.com/arkworks-rs/).
 
-This repo is in its initial stage: eventually I will add functionality for generating/verifying SNARKs for CCS. The SNARK in Setty et al. is a generalization of [Spartan](https://eprint.iacr.org/2019/550).
+## TODO List/Updates
+- [x] R1CS
+- [x] Plonkish
+- [x] Custom Constrain Systems (CCS)
+- [x] Compilers for R1CS/Plonkish into CCS
+- [x] Relaxed R1CS
+- [x] Pedersen Commitments
+- [ ] Folding for Relaxed R1CS
+- [ ] Folding for CCS
+- [ ] Unit tests
+- [ ] Type abstraction for constraint systems AND commitment schemes
+- [ ] IVC...
