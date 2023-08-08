@@ -27,13 +27,13 @@ impl<F: Field> R1CS<F> {
         instance: &Instance<F>,
         witness: &Witness<F>
     ) -> bool {
+        let z = construct_z(instance, witness);
         for m in 0..self.A.data.len() {
-            let z = construct_z(instance, witness);
             let eval = dot_prod(&self.A.data[m], &z)
                 * dot_prod(&self.B.data[m], &z)
                 - dot_prod(&self.C.data[m], &z);
 
-            if !eval.is_zero() { return false }
+            if !eval.is_zero() { return false; }
         }
 
         true

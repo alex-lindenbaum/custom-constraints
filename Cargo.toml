@@ -8,3 +8,6 @@ edition = "2021"
 [dependencies]
 ark-ff = "0.4.2"
 ark-poly = "0.4.2"
+ark-ec = "0.4.2"
+ark-bls12-381 = "0.4.0"
+rand = "0.8.5"
